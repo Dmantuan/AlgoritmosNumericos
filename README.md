@@ -1,4 +1,4 @@
-Especificacoes do trabalho
+Especificações do trabalho
 
 1.2 Métodos de solução dos Sistemas Lineares
 O trabalho deve implementar os 5 métodos ensinados na disciplina:
@@ -18,5 +18,5 @@ informada no arquivo e para o valor de X0 o valor de G no sistema iterativo Xk =
 Ao final da execução, o trabalho deve informar, para cada método, o valor do vetor X obtido e o tempo
 gasto para calculá-lo.
  
-Diretorio:
+Diretório:
 https://drive.google.com/file/d/1WJVq7G-emTRUZ2G7LoCnnjSoiYfamd6P/view
