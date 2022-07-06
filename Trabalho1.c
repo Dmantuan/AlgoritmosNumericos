@@ -15,19 +15,15 @@ void main(){
         int sistemas, dimension;
         float precisao;
         char simetria;
-        fscanf(file,"%d %d %f %c", &sistemas, &dimension, &precisao, &simetria);
-        printf("sistemas:%d dimension:%d precisao:%f simetria:%c\n", sistemas, dimension, precisao, simetria);
-
-        /*
-        Falta: 
-                Leitura da ultima linha do arquivo
-        */
-       
-        //inicializacao e implementacao da matriz 
         float **M;
         float *X;
         X = (float *) malloc(dimension*sizeof(int));
         M = (float **) malloc(dimension*sizeof(int));
+        
+        fscanf(file,"%d %d %f %c", &sistemas, &dimension, &precisao, &simetria);
+        printf("sistemas:%d dimension:%d precisao:%f simetria:%c\n", sistemas, dimension, precisao, simetria);
+
+        //Inicializacao da matriz como matriz extensa
         for (int i = 0; i < dimension; i++){
             M[i] = (float*)malloc((dimension+1)*sizeof(int*));
             for (int j = 0; j < dimension; j++){
@@ -52,16 +48,17 @@ void main(){
         printf("\nResultado: " );
             for(int i=0; i<dimension; i++)
         printf("\nX%d = %f\n", i+1, X[i]);
-    }
 
+        //Liberando a matriz
+        for (int i = 0; i < dimension+1; i++){
+            free(M[i]);
+        }
+        free(M);
+        
+    }
+    
     fclose(file);
 }
-
-/*
-    Em Gauss o codigo nao esta usando a matriz ampliada para fazer as operacaoes, acredito que B signifique que e o vetor de resultados
-        Quando voltar resolver isso
-    Lembrar que a saida e um vetor do tamanho do numero de linhas 
-*/
 
 float* Gauss(float **A, int N){
     int k,i,j,soma;
