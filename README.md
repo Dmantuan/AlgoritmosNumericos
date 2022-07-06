@@ -17,6 +17,6 @@ informada no arquivo e para o valor de X0 o valor de G no sistema iterativo Xk =
 1.3 Dados de Saída
 Ao final da execução, o trabalho deve informar, para cada método, o valor do vetor X obtido e o tempo
 gasto para calculá-lo.
- 
+
 Diretório:
 https://drive.google.com/file/d/1WJVq7G-emTRUZ2G7LoCnnjSoiYfamd6P/view
