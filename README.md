@@ -2,8 +2,8 @@ Especificações do trabalho
 
 1.2 Métodos de solução dos Sistemas Lineares
 O trabalho deve implementar os 5 métodos ensinados na disciplina:
-• Eliminação de Gauss;
-• Fatoração LU;
+• Eliminação de Gauss;  *OK*
+• Fatoração LU;         *OK*
 • Decomposição Cholesky;
 • Gauss-Jacobi;
 • Gauss-Seidel.
